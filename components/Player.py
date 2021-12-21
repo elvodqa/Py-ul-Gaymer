@@ -7,7 +7,7 @@ class Player(object):
         super(Player, self).__init__(*args)
         self.components = []
         self.texture = None
-        self.position: Vector2 = Vector2(None, None)
+        self.position: Vector2 = Vector2(0, 0)
 
     def attach_component(self, component: Component):
         self.components.insert(component)
