@@ -1,11 +1,14 @@
 
 from components.Component import Component
-
+from Math.Vector2 import Vector2
 
 class Player(object):
     def __init__(self, *args):
         super(Player, self).__init__(*args)
         self.components = []
+        self.texture = None
+        self.position : Vector2 = Vector2(None, None)
+
 
     def attach_component(self, component: Component):
         self.components.insert(component)
