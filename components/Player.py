@@ -7,7 +7,13 @@ class Player(object):
         super(Player, self).__init__(*args)
         self.components = []
 
-    def attach_component(component: Component):
-        self.component
+    def attach_component(self, component: Component):
+        self.components.insert(component)
+
+    def remove_component(self, component: Component):
+        for v in self.components:
+            if v == component:
+                self.components.remove(v)
+
 
         
