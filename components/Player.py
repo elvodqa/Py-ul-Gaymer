@@ -15,5 +15,8 @@ class Player(object):
             if v == component:
                 self.components.remove(v)
 
+    def update(self):
+        for v in self.components:
+            v.update()
 
         
